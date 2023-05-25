@@ -1,0 +1,15 @@
+button {
+    background: aquamarine;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+    margin: 0 1rem;
+    width: 50px;
+
+    &.delete {
+        background: violet;
+        width: auto;
+    }
+}

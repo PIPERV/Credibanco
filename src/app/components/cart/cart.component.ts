@@ -39,4 +39,21 @@ export class CartComponent implements OnInit {
     this.getData();
   }
 
+  exportToXLS(): void {
+    // Generar el contenido XLS
+    let xlsContent = 'data:text/xls;charset=utf-8,Nombre\tCantidad\tPrecio\tImagen\n';
+    this.data.forEach((obj: any) => {
+      xlsContent += `${obj.title}\t${obj.quantity}\t${obj.cost}\t${obj.image}\n`;
+    });
+
+    // Crear un enlace temporal
+    const link = document.createElement('a');
+    link.setAttribute('href', encodeURI(xlsContent));
+    link.setAttribute('download', 'archivo.xls');
+
+    // Simular el clic en el enlace para iniciar la descarga
+    link.click();
+  }
+
+
 }
