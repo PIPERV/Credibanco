@@ -1,23 +1,16 @@
 .carousel-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  
-    .carousel {
-      display: flex;
-      transition: transform 0.5s;
-      will-change: transform;
-  
-      .product {
-        flex: 0 0 100%;
-        padding: 20px;
-        text-align: center;
-  
-        img {
-          max-width: 100%;
-          height: auto;
-          margin-bottom: 10px;
-        }
-      }
-    }
+  cursor: pointer;
+  display: flex;
+  height: 300px;
+  margin-top: 32px;
+  overflow-x: auto;
+  width: 90%;
+  div{
+    margin: 0 20px;
   }
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
+}

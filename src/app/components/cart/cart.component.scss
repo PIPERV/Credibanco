@@ -1,6 +1,12 @@
 .cart {
     align-items: center;
     display: flex;
+
+    .delete {
+        background: violet;
+        width: auto;
+    }
+    
     img {
         max-width: 50%;
     }
