@@ -1,7 +1,0 @@
-<h2>Aquí encontrarás todos nuestros productos</h2>
-<div class="carousel-container">
-  <div *ngFor="let product of products">
-    <img [src]="product.images[0]" alt="{{ product.name }}" (click)="goToDetails(product.title)">
-    <h3>{{ product.title }}</h3>
-  </div>
-</div>
