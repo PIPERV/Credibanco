@@ -1,0 +1,14 @@
+<button (click)="goToHome()">Ir a la página principal!</button>
+<h2>Aquí encontrarás los detalles del producto:</h2>
+<h3> {{item}} </h3>
+
+<body>
+    <div>
+        <img src="{{ details[0].images[0] }}" alt="">
+    </div>
+    <div>
+        <p>{{ details[0].description }}</p>
+        <span>Este producto tiene un valor de: $ {{ details[0].price }} </span>
+    </div>
+</body>
+

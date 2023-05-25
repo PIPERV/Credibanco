@@ -1,0 +1,12 @@
+.container {
+    align-items: center;
+    display: flex;
+    overflow: auto;
+    span {
+        color: gray;
+        cursor: pointer;
+        width: 150px;
+        font-size: 24px;
+        margin: 0px 16px;
+    }
+}

@@ -7,6 +7,9 @@ import { ProductSearchComponent } from './components/product-search/product-sear
 import { ProductCarouselComponent } from './components/product-carousel/product-carousel.component';
 import { ProductCategoriesComponent } from './components/product-categories/product-categories.component';
 import { HomeComponent } from './components/home/home.component';
+import { UsersService } from './core/services/users.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +17,17 @@ import { HomeComponent } from './components/home/home.component';
     ProductSearchComponent,
     ProductCarouselComponent,
     ProductCategoriesComponent,
-    HomeComponent
+    HomeComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    UsersService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

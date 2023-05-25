@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-product-search',
@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-search.component.scss']
 })
 export class ProductSearchComponent implements OnInit {
-
+  timeout: any;
+  @Output() search: EventEmitter<string> = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  searchFilter(event: string){
+    clearTimeout(this.timeout);
+    this.timeout = setTimeout(() => {
+         this.search.emit(event);
+         console.log("Esto fue lo que escribí: ", event)
+      }, 800);
   }
 
 }
