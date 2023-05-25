@@ -10,6 +10,9 @@ import { HomeComponent } from './components/home/home.component';
 import { UsersService } from './core/services/users.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { CartComponent } from './components/cart/cart.component';
+import { CounterComponent } from './shared/counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     ProductCarouselComponent,
     ProductCategoriesComponent,
     HomeComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    HeaderComponent,
+    CartComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,

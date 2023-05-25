@@ -1,4 +1,4 @@
-<button (click)="goToHome()">Ir a la página principal!</button>
+<app-header></app-header>
 <h2>Aquí encontrarás los detalles del producto:</h2>
 <h3> {{item}} </h3>
 
@@ -8,7 +8,9 @@
     </div>
     <div>
         <p>{{ details[0].description }}</p>
-        <span>Este producto tiene un valor de: $ {{ details[0].price }} </span>
+        <span>Este producto tiene un valor de: $ {{ details[0].price }} pesos por unidad</span>
+        <p>Cuántos desea comprar?</p>
+        <app-counter [counter]="quantity" (finalQuantity)="modifyQuantity($event)"></app-counter>
     </div>
 </body>
 

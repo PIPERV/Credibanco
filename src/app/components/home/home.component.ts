@@ -26,7 +26,6 @@ export class HomeComponent implements OnInit {
   }
 
   selectItem(item: any){
-    console.log(item);
     this.goToDetails(item);
   }
 

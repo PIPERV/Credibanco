@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Bienvenid@ a la Tienda de Credibanco!</h1>
+    <app-header></app-header>
     <app-product-search (search)="showProducts('title', $event)"></app-product-search>
     <br>
     <app-product-categories (category)="showProducts('categoryId', $event)"></app-product-categories>

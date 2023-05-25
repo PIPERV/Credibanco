@@ -17,7 +17,6 @@ export class ProductSearchComponent implements OnInit {
     clearTimeout(this.timeout);
     this.timeout = setTimeout(() => {
          this.search.emit(event);
-         console.log("Esto fue lo que escribí: ", event)
       }, 800);
   }
 
